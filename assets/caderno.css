@@ -1,0 +1,139 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0c002b;
+}
+.caderno {
+    width: 750px;
+    height: 750px;
+    position: relative;
+    background: #120337;
+    overflow: hidden;
+}
+
+main {
+    color: white;
+    width: 750px;
+    height: 750px;
+    
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.378);
+}
+
+.caderno span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #0c002b, #1779ff);
+    animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.caderno span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, #0c002b, #1779ff);
+    animation: animate2 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translatey(-100%);
+    }
+
+    100% {
+        transform: translatey(100%);
+    }
+}
+
+.caderno span:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left, #0c002b, #1779ff);
+    animation: animate3 2s linear infinite;
+    }
+
+    @keyframes animate3 {
+    0% {
+    transform: translateX(100%);
+    }
+
+    100% {
+    transform: translateX(-100%);
+    }
+}
+
+.caderno span:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to top, #0c002b, #1779ff);
+    animation: animate4 2s linear infinite;
+    animation-delay: 1s;
+    }
+
+    @keyframes animate4 {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.caderno > main > code {
+    padding: 15px;
+    position: absolute;
+    left: 0;
+    top: 80px;
+}
+
+
+.button {
+display: inline-block;
+padding: 10px 20px;
+background-color: blue;
+color: white;
+border: 20px solid black; /* adiciona uma borda preta ao botão, com espessura de 20 pixels */
+border-radius: 50%; /* arredonda as bordas do botão */
+transition: transform 1s; /* adiciona uma transição suave à transformação */
+}
+
+.button:hover {
+transform: rotate(360deg); /* faz a borda girar 360 graus quando o mouse passar por cima do botão */
+}
