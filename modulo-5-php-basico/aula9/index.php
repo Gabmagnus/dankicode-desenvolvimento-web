@@ -52,7 +52,7 @@
         <span></span>
         <span></span>
         <main>
-            <h1>AULA 2 - MODULO 5</h1>
+            <h1>AULA 1 - MODULO 5 - VALIDAÇOES</h1>
                 <code style="display: flex; justify-content: flex-start; flex-direction:column; align-items: center; height: 100%; width: 100%;">
                     <div class="login">
                         <form method="POST" name="login">
@@ -63,13 +63,17 @@
                     </form>
                     <br>
                     <?php
-                    $db_users = ['gabmagnus' => 'Coxinha0604', 'gremio' => 'gremio99752', 'gremio2' => '8yMhnIvpT3@rdGA'];
+                    $db_users = ['gabmagnus' => 'Coxinha0604',
+                                 'gremio' => 'gremio99752',
+                                 'gremio2' => '8yMhnIvpT3@rdGA'];
 
                     $usr_name = @$_POST["user"];
                     $usr_pass = @$_POST["pass"];
+                    
+                    echo "<pre>";  
+                    print_r($db_users);
+                    echo "</pre>";
 
-                    echo $usr_pass;
-                    echo $usr_name;
                     if ($usr_name != null) {
                         if (array_key_exists($usr_name, $db_users)) {
                             if ($db_users[$usr_name] == $usr_pass) {

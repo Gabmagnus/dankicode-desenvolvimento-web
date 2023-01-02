@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,11 +14,10 @@
         <span></span>
         <span></span>
         <main>
-            <h1>AULA 2</h1>
-            <code>
-                <strong>Front-end/client-side:</strong> Roda do lado do cliente(usuário) e nao usa processamento do servidor<br><br>
-                <strong>Back-end/Server-Side:</strong> Roda do lado do servidor e nao usa processamento do cliente!
-            </code>
+            <h1>AULA 8 - MODULO 6 - FUNÇOES DE ARRAY</h1>
+                <code>
+
+                </code>
         </main>
     </div>
 </body>

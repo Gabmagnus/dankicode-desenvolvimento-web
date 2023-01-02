@@ -14,10 +14,8 @@
         <span></span>
         <span></span>
         <main>
-            <h1>AULA 2 - MODULO 5</h1>
+            <h1>AULA 5 - MODULO 5 - CONSTANTES</h1>
                 <code>
-                    <p>Constantes <p>
-                    <br>
                     <?php
                     //para declarar uma constante usar o metodo define
                         define("NOME", "Gabriel");

@@ -14,10 +14,8 @@
         <span></span>
         <span></span>
         <main>
-            <h1>AULA 2 - MODULO 5</h1>
+            <h1>AULA 1 - MODULO 5 - ARRAYS</h1>
                 <code>
-                    <p>Contas matemáticas <p>
-                    <br>
                     <?php
                         // Jeito errado!
                         // $nome1 = "Denilson";

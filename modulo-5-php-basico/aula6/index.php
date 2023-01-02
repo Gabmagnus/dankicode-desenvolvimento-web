@@ -14,10 +14,8 @@
         <span></span>
         <span></span>
         <main>
-            <h1>AULA 2 - MODULO 5</h1>
+            <h1>AULA 6 - MODULO 5 - OPERAÇOES MATEMATICAS</h1>
                 <code>
-                    <p>Operaçoes matemáticas<p>
-                    <br>
                 <pre>
                     <?php
                         // - - menos

@@ -14,21 +14,21 @@
         <span></span>
         <span></span>
         <main>
-            <h1>AULA 3 - MODULO 5 - VARIAVEIS</h1>
+            <h1>AULA 3 - MODULO 6 - DIE E SLEEP</h1>
                 <code>
-                    <p>Variaveis! <p>
-                    <br>
-                    <p></p>
-                    <?php
-                        // String 
-                        $nome = 'Gabriel';
+                    <?php 
+                        echo 'teste';
+                        sleep(2);
+                        echo 'teste';
+                        sleep(2);
 
-                        // Inteiros
-                        $idade = 23;
-
-                        echo $nome;
-                        echo "<br>";
-                        echo $idade;
+                        die();
+                        echo 'teste';
+                        sleep(2);
+                        echo 'teste';
+                        sleep(2);
+                    
+                    
                     ?>
                 </code>
         </main>

@@ -14,24 +14,17 @@
         <span></span>
         <span></span>
         <main>
-            <h1>AULA 3 - MODULO 5 - VARIAVEIS</h1>
+            <h1>AULA 5 - MODULO 6 - INCLUDE E DATE</h1>
                 <code>
-                    <p>Variaveis! <p>
-                    <br>
-                    <p></p>
-                    <?php
-                        // String 
-                        $nome = 'Gabriel';
+                    <?php 
+                        /
+                        date_default_timezone_set('Europe/Dublin');
+                        $data =  date('d/m/Y - H:i:s',time()+60);
 
-                        // Inteiros
-                        $idade = 23;
-
-                        echo $nome;
-                        echo "<br>";
-                        echo $idade;
+                        echo $data;
                     ?>
                 </code>
         </main>
     </div>
 </body>
-</html>
+</html> >^^^^^^^^^^666666666666666666666666666666666666666666666666666666666666666666666

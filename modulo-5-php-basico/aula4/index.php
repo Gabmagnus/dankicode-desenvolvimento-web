@@ -14,9 +14,8 @@
         <span></span>
         <span></span>
         <main>
-            <h1>AULA 2 - MODULO 5</h1>
+            <h1>AULA 4 - MODULO 5 - MAIS VARIAVEIS</h1>
                 <code>
-                    <p>Variaveis! <p>
                     <br>
                     <p></p>
                     <?php

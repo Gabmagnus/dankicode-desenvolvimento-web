@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../../assets/caderno.css">
-</head>
+    </head>
 <body>
     <div class="caderno">
         <span></span>
@@ -14,16 +14,11 @@
         <span></span>
         <span></span>
         <main>
-            <h1>AULA 2 - MODULO 5 - VARIAVEL SERVER</h1>
-                <code>
-                    <p>Sintaxes da variavel server <p>
-                    <?php
-                        echo "<pre>";
-                        print_r($_SERVER);
-                        echo "</pre>";
-                    ?>
-                </code>
+            <h1>AULA 11 - MODULO 6 - SINTAXE ALTERNATIVA</h1>
+            <code>
+
+            </code>
         </main>
-    </div>
+    </>
 </body>
 </html>

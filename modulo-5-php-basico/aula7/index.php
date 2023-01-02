@@ -14,7 +14,7 @@
         <span></span>
         <span></span>
         <main>
-            <h1>AULA 2 - MODULO 5</h1>
+            <h1>AULA 7 - MODULO 5 - ARRAYS</h1>
                 <code>
                     <p>Arrays <p>
                     <br>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,15 +14,10 @@
         <span></span>
         <span></span>
         <main>
-            <h1>AULA 2</h1>
-            <code>
-                <strong>Servidor Apache:</strong> Servidor web, HTTP, repesenta quase 50% de todos os servidores no mundo <br><br>
+            <h1>AULA 4 - MODULO 6 - FUNÇOES NATIVAS</h1>
+                <code>
 
-
-                <strong>ACESSAMOS O SITE => SERVIDOR </strong><br>
-                <strong>SERVIDOR => NAVEGADOR</strong><br>
-                => = requisiçao
-            </code>
+                </code>
         </main>
     </div>
 </body>
