@@ -30,6 +30,8 @@
                     $obj2 = new Principal;
                     
                     Principal::$variavel = 'gremio';
+                    echo Principal::$variavel;
+
                     echo $obj1->metodoEstatico();
                 ?>
             </code>
