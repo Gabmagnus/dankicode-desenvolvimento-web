@@ -14,28 +14,58 @@
         <span></span>
         <span></span>
         <main>
-            <h1>AULA 1 - MODULO 6 - FOREACH</h1>
+            <h1>AULA 1 - MODULO 7 - INTRODUÇAO POO</h1>
                 <code>
                     <?php 
-                        $arr = ['G','R','E','M','I','O'];
-                        
-                        for ($i=0; $i < count($arr); $i++) { 
-                            echo $arr[$i];
-                        }
-                        echo '<hr>';
-                        echo "<br>";
+                    /*
+                    
+                    Pessoa
+                    {
+                       ATRIBUTOS = VARIAVEIS 
+                        nome 
+                        idade
+                        peso
 
-                        for ($y=1; $y <= 3; $y++) {
-                            for ($x=1; $x <= 3; $x++) { 
-                                echo " [x:$x:y:$y] ";
-                            }
-                            echo "<br>";
-                            echo "<br>";
+                        METODOS = FUNÇOES
+                        comer()
+                        crescer()
+                    }
+                    
+                    
+                    */
+                    
+                    class Pessoa {
+                        //OBJETO Pessoa!
+
+
+                        private $nome= 'gabriel';
+                        private $idade= 21;
+                        public $altura = 1.80;
+
+                        public function crescer()
+                        {
+                            $this->altura+=0.05; 
+                            echo "estou crescendo!, agora tenho $this->altura! <br>";
                         }
-                        echo '<hr>';
-                        foreach ($arr as $key => $value) {
-                            echo "$key - $value  ||  ";
+
+                        private function comer()
+                        {
+                            echo "estou comendo!";
                         }
+                    }
+                    // instanciar!!!!
+                    $pessoa1 = new Pessoa;
+                    $pessoa2 = new Pessoa;
+                    $pessoa2->altura = 1.75;
+                    $pessoa1->crescer();
+                    $pessoa2->crescer();
+                    $pessoa2->crescer();
+                    $pessoa2->crescer();
+                    $pessoa2->crescer();
+                    $pessoa2->crescer();
+                    $pessoa2->crescer();
+                    $pessoa2->crescer();
+                    $pessoa1->crescer();
                     ?>
                 </code>
         </main>

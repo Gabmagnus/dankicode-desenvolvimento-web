@@ -14,19 +14,26 @@
         <span></span>
         <span></span>
         <main>
-            <h1>AULA 3 - MODULO 6 - DIE E SLEEP</h1>
+            <h1>AULA 3 - MODULO 7 - FINAL CLASS, HERANÇAS, PROTECTED</h1>
                 <code>
                     <?php 
-                        echo 'teste';
-                        sleep(2);
-                        echo 'teste';
-                        sleep(2);
+                   /*final nao pode ser extendido para outra classe*/
+                    class Papito
+                    {
+                    /*protected pode ser extendido para outras classes, mas nao pode ser chamada fora da class*/
+                        protected $variaveldobalacobaco = "balacobaco"; 
+                    }
 
-                        die();
-                        echo 'teste';
-                        sleep(2);
-                        echo 'teste';
-                        sleep(2);
+                    class Children extends Papito
+                    {
+                        public function mostrarBalacobaco() {
+                            echo $this->variaveldobalacobaco;
+                        }
+                    }
+                    
+                    $children = new Children; 
+                    // echo $children->variaveldobalacobaco; variavel balacobaco é protected
+                    echo $children->mostrarBalacobaco();
                     
                     
                     ?>

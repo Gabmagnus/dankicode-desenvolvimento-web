@@ -18,9 +18,9 @@
             <code>
 
             <a style="position: absolute;
-                        bottom: -61VH;
+                        bottom: -10VH;
                         right: -60VW;" 
-                        href="/modulo-6-php-intermediário/aula10-cookies/index.php">
+                        href="index.php">
                     <button style="width: 120px;
                                     height: 50px;
                                     background: darkblue;
@@ -31,6 +31,9 @@
                     </button>
             </a>
             <?php 
+                if(isset($_COOKIE['cookie-law'])){
+                    echo "COOKIE-LAW ENCONTRADO! <BR>";
+                }
                 echo 'cookie user : ';  
                 echo $_COOKIE['USER'];
                 echo '<br><br>';

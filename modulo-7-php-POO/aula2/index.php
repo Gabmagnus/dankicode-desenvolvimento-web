@@ -14,22 +14,37 @@
         <span></span>
         <span></span>
         <main>
-            <h1>AULA 2 - MODULO 6 - Array multidimensional</h1>
+            <h1>AULA 2 - MODULO 7 - PUBLIC, PRIVATE, STATIC</h1>
                 <code>
                     <?php 
-                    $arr = [
-                        ['Gabriel', 'Joao', 'Denilson'],
-                        ['26', '14', '27']];
-                        for ($x=0; $x < count($arr[0]); $x++) { 
-                            for ($j=0; $j < count($arr[1]); $j++) { 
-                                echo $arr[0][$x];
-                                echo ' : ';
-                                echo $arr[1][$j];
-                                echo '<br>';
-                            }
-                        }
-                    ?>
+                    include "exemplo.class.php";
 
+                    $exemplo = new Exemplo;
+                    $exemplo2 = new Exemplo;
+
+                    // $exemplo->var1 - var1 é privada, portanto dará erro!
+                    $exemplo->var2 = 'é ele!'; //var2 é publica!
+                    // $exemplo->metodoPrivado() - metodoPrivado() é privada, portanto dará erro!
+                    $exemplo->metodoPublico("é o gremio"); //var1 privada pode ser editada a partir de um metodo publico!
+
+                    echo "<br><br><br>";
+
+
+
+                    //STATIC
+                    //métodos estáticos podem ser chamados sem uma instância do objeto criada, a pseudo-variável $this não está disponível dentro de um método declarado como estático.
+
+                    // $exemplo->var3 = 'gremio';
+                    // echo "$exemplo->var3";
+                    // $exemplo2->var3 = 'gremio';
+                    // echo "$exemplo2->var3";
+
+                    // ou
+
+                    echo Exemplo::metodoEstatico("gremio");
+                    Exemplo::$var3 = 'gremio';
+                    echo Exemplo::$var3;
+                    ?>
                 </code>
         </main>
     </div>

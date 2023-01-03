@@ -13,7 +13,7 @@ class Auth
                                 'eumesmo' => 'KmljK!UCegOJuSN',
                                 'jose' => 'R2GiEl6l4qZo6Rc'];
 
-                                
+    
     public function logoutCleaner() {
         
         if (isset($_POST['logout'])) {
@@ -72,8 +72,10 @@ class Auth
             $logindb = $this::$login_db;
             if (array_key_exists($userlwrcase, $logindb)) {
                 if ($logindb[$userlwrcase] == $this->pass) {
-                    setcookie('USER', $userlwrcase, time() + (60*60*24*30), '/');
-                    setcookie('PASS', $logindb[$userlwrcase], time() + (60*60*24*30), '/');
+                    if (isset($_POST['cookie-checker'])) {
+                        setcookie('USER', $userlwrcase, time() + (60*60*24*30), '/');
+                        setcookie('PASS', $logindb[$userlwrcase], time() + (60*60*24*30), '/');
+                    }
                     return true;
                 } else {
                     return false;

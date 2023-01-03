@@ -14,9 +14,19 @@
         <span></span>
         <span></span>
         <main>
-            <h1>AULA 8 - MODULO 6 - FUNÇOES DE ARRAY</h1>
+            <h1>AULA 8 - MODULO 7 - AUTOLOAD</h1>
                 <code>
+                    <?php 
+                    include("config.php");
+                    
 
+
+                    use Home\Inicial as Home;
+                    $utils = new Utilidades();
+                    echo "<br>";
+                    new Home();
+                    
+                    ?>
                 </code>
         </main>
     </div>

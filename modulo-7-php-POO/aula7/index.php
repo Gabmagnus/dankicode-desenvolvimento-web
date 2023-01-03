@@ -14,28 +14,14 @@
         <span></span>
         <span></span>
         <main>
-            <h1>AULA 7 - MODULO 6 - SWITCH, CONTINUE, BREAK</h1>
+            <h1>AULA 7 - MODULO 7 - NAMESPACE E USE KEYWORDS</h1>
                 <code>
                     <?php 
+                        include 'class1.php';
+                        include 'class2.php';
 
-                        $nome = 'Gabriel';
-
-                        // switch ($nome) {
-                        //     case 'Gabriel':
-                        //         echo "Meu nome!";
-                        //         break;
-                        //     default:
-                        //         echo "nao é meu nome :(";
-                        //         break;
-                        // }
-
-                        //break para o loop for, while, do, foreach e switch
-                        for ($i=0; $i < 10; $i++) { 
-                            echo "<hr>";
-                            if ($i != 6) {
-                                break;
-                            }
-                        }
+                        $class1 = new \Session1\Class1();
+                    
                     ?>
                 </code>
         </main>

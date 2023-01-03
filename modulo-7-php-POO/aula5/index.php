@@ -14,17 +14,26 @@
         <span></span>
         <span></span>
         <main>
-            <h1>AULA 5 - MODULO 6 - INCLUDE E DATE</h1>
+            <h1>AULA 5 - MODULO 7 - INTERFACE E IMPLEMENTS</h1>
                 <code>
                     <?php 
-                        /
-                        date_default_timezone_set('Europe/Dublin');
-                        $data =  date('d/m/Y - H:i:s',time()+60);
+                    
+                        include 'interface.php';
 
-                        echo $data;
+                        class Teste implements Interface1 {
+
+                            public function printOnScreen(string $par)
+                            {
+                                
+                            }
+
+                        }
+
+                        $teste = new Teste();
+                    
                     ?>
                 </code>
         </main>
     </div>
 </body>
-</html> >^^^^^^^^^^666666666666666666666666666666666666666666666666666666666666666666666
+</html>
